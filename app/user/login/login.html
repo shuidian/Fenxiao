@@ -1,0 +1,52 @@
+<header class="full-line-wrap">
+    <div class="valid-line-wrap header-body">
+        <div class="logo">
+            <img src="../../../assets/img/logo.png" alt="">
+        </div>
+        <div class="personal-info">
+            <a [routerLink]="['/user/register']" class="register vm">注册</a>
+        </div>
+    </div>
+</header>
+<div class="full-line-wrap login-full-line-wrap">
+    <div class="valid-line-wrap login-wrap">
+        <div class="left-img">
+            <img src="../../../assets/img/login-bg.png" alt="分销商城">
+        </div>
+        <div class="right-form">
+            <form name="loginForm" (submit)="login()" >
+            <h2>登录</h2>
+            <dl>
+                <dt>请输入您的手机号码</dt>
+                <dd>
+                    <input [(ngModel)]="mobile_number"
+                           name="mobile_number"
+                           required
+                           type="text">
+                </dd>
+                <dt>请输入密码</dt>
+                <dd class="password">
+                    <input [(ngModel)]="password"
+                           name="password"
+                           required
+                           type="password">
+                </dd>
+            </dl>
+            <div class="remember-account">
+                <label>
+                    <input [(ngModel)]="rememberAccount" name="rememberAccount" class="vm" type="checkbox">
+                    <span class="vm">记住账号</span>
+                    <a href="#">忘记密码</a>
+                </label>
+            </div>
+            <button class="register-btn">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+            </form>
+        </div>
+    </div>
+</div>
+<footer class="full-line-wrap">
+    <div class="valid-line-wrap footer-body">
+        <p>Copyright 2015沪ICP备15035021号 上海蜜瓜科技有限公司 All rights reserved</p>
+    </div>
+</footer>
+

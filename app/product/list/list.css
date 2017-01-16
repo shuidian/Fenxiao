@@ -1,0 +1,451 @@
+/* S-头部样式 */
+header{
+    height: 54px;
+    background: #df575b;
+    border-bottom: 1px solid #ccc;
+}
+header .header-body {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+header .user-info{
+    display: flex;
+}
+.username{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 7px;
+    color: #fff;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 0;
+}
+header .username span,
+header .username a{
+    display: inline-block;
+    height: 100%;
+    font-size: 12px;
+    vertical-align: middle;
+    color: #fff;
+}
+header .username span.welcome{
+    padding: 0 10px;
+}
+header .username span.name{
+    max-width: 240px;
+    margin-right: 10px;
+}
+header .username .user-icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../../../assets/img/hd-user-icon.png") no-repeat;
+}
+header .username .quitlogin{
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    background: #df575b;
+    border-radius: 2px;
+    text-align: center;
+    border: 1px solid #E3E6E1;
+}
+header .username .quitlogin a{
+    display: block;
+    width: 40px;
+    height: 20px;
+    color: #fff;
+}
+header .messages{
+    margin-top: 7px;
+    width: 44px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 35px;
+    color: #fff;
+    font-size: 16px;
+    background: url("../../../assets/img/hd-messages.png") no-repeat 12px 10px;
+    cursor: pointer;
+}
+header .messages span{
+    color: #efc686;
+}
+header .messages:hover{
+    background: url("../../../assets/img/hd-messages-pressed.png") no-repeat 12px 10px;
+}
+header .messages:hover span{
+    color: #E8AD4F;
+}
+header .operate{
+    display: flex;
+}
+.operate a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: 12px;
+    color: #fff;
+}
+/* E-头部样式 */
+/* S-搜索框样式 */
+.search-bar{
+    height: 100px;
+    background: #fff;
+    border-bottom: 1px solid #f99800;
+}
+.search-bar-content{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.search-bar-content .logo{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+}
+.search-bar-content .logo img{
+    width: 150px;
+}
+.search-bar-content .search{
+    display: flex;
+    width: 620px;
+    height: 40px;
+    border: 2px solid #f99800;
+}
+.search-bar-content .search .search-type{
+    width: 10%;
+    border-right: 1px solid #eee;
+}
+.search-bar-content .search .search-btn{
+    width: 20%;
+}
+.search-bar-content .search .search-type ul{
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+    transition: .3s;
+}
+.search-bar-content .search .search-type ul:after{
+    content: '';
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    display: block;
+    width: 8px;
+    height: 4px;
+    background: url("../../../assets/img/arrow-down.png") no-repeat;
+}
+.search-bar-content .search .search-type ul:hover{
+    height: 80px;
+    background: #fafafa;
+}
+.search-bar-content .search .search-type ul li{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    padding-left: 10%;
+    cursor: pointer;
+}
+.search-bar-content .search .search-input{
+    width: 70%;
+}
+.search-bar-content .search .search-input input{
+    width: 100%;
+    height: 100%;
+    padding-left: 5px;
+}
+.search-bar-content .search .search-btn{
+    background: #f99800;
+    color: #fff;
+    font-size: 16px;
+}
+.search-nav{
+    display: inline-block;
+}
+.search-nav a{
+    margin-left: 10px;
+    display: inline-block;
+    width: 98px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    padding: 5px 0;
+    background-color: #df575b;
+    color: #fff;
+    font-size: 13px;
+}
+/* E-搜索框样式 */
+/* S-面包屑导航区域 */
+.breadcrumb{
+    padding: 20px 0;
+    background: #fff;
+}
+.breadcrumb ul{
+    display: flex;
+}
+.breadcrumb ul li{
+    margin-right: 10px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+.breadcrumb ul li a{
+    color: #888;
+}
+/* E-面包屑导航区域 */
+/* S-品牌型号区域 */
+.filter{
+    padding-bottom: 20px;
+    background: #fff;
+}
+.pinpai,.fenlei{
+    margin-top: -1px;
+    display: flex;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #f1f1f1;
+}
+.filter .item-title{
+    margin-right: 10px;
+    width: 48px;
+    padding: 0 10px;
+    color: #888;
+    box-sizing: border-box;
+}
+.filter .item-list{
+    width: 900px;
+}
+.filter .item-list ul{
+    display: flex;
+}
+.filter .item-list ul li{
+    padding: 0 15px;
+}
+.filter .item-list ul li a{
+    color: #555;
+}
+.filter .item-list ul li a:hover{
+    color: #f99800;
+}
+.filter .item-operate{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+.filter .item-operate a{
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: block;
+    width: 48px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 5px;
+    border: solid 1px #e8e8e8;
+    background: #fff;
+    color: #888;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+.more:before{
+    position: absolute;
+    top: 8px;
+    right: 4px;
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-top-color: #aaa;
+}
+.more:after{
+    position: absolute;
+    top: 7px;
+    right: 4px;
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-top-color: #fff;
+}
+.multi:before{
+    position: absolute;
+    top: 7px;
+    right: 9px;
+    content: '';
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+.multi:after{
+    position: absolute;
+    top: 11px;
+    right: 5px;
+    content: '';
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-top: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+}
+/* E-品牌型号区域 */
+/* S-排名和价格区间 */
+.ranking{
+    padding: 5px 0;
+    background: #fff;
+}
+.ranking-content{
+    display: flex;
+    height: 40px;
+    line-height: 40px;
+    background: #F5F5F5;
+    border: solid 1px #e8e8e8;
+}
+.ranking-content a{
+    margin-top: -1px;
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    color: #888;
+    box-sizing: border-box;
+}
+.ranking-content a.active{
+    background: #f99800;
+    color: #fff;
+    border: 1px solid #f99800;
+}
+.ranking-content a:first-child.active{
+    margin-left: -1px;
+}
+.price{
+    overflow: hidden;
+    width: 180px;
+    width: 225px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.price input{
+    padding: 2px 7px;
+    height: 18px;
+    border: solid 1px #e8e8e8;
+    width: 50px;
+    color: #aaa;
+}
+.price button{
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    line-height: 24px;
+    border: solid 1px #e8e8e8;
+    text-align: center;
+    box-sizing: border-box;
+    background: #fff;
+    color: #f99800;
+}
+.min-num{
+    overflow: hidden;
+    width: 150px;
+    width: 195px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.min-num input{
+    width: 28px;
+    padding: 2px 7px;
+    height: 18px;
+    border: solid 1px #e8e8e8;
+    color: #aaa;
+}
+.min-num span{
+    color: #888;
+}
+.min-num button{
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    line-height: 24px;
+    border: solid 1px #e8e8e8;
+    text-align: center;
+    box-sizing: border-box;
+    background: #fff;
+    color: #f99800;
+}
+/* E-排名和价格区间 */
+/* S-产品列表 */
+.product-list{
+    width: 1220px;
+}
+.product-list ul{
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.product{
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 15px;
+    width: 280px;
+    height: 380px;
+    background: #fff;
+}
+.product .img{
+    display: flex;
+    width: 280px;
+    height: 280px;
+    justify-content: center;
+    align-items: center;
+}
+.product .img img{
+    max-width: 100%;
+    max-height: 100%;
+    transition: .3s;
+}
+.product .img img:hover{
+    transform: scale(1.1);
+}
+.product-price,
+.title,
+.company{
+    margin-top: 5px;
+    padding: 0 15px;
+}
+.product .product-price{
+    font-size: 20px;
+    color: #f99800;
+}
+.product .title a{
+    color: #555;
+}
+.product .title a:hover{
+    color: #f99800;
+}
+.product .company a{
+    color: #555;
+}
+.product .company a:hover{
+    color: #f99800;
+}
+/* E-产品列表 */
+/* S-尾部样式 */
+footer{
+    background: #DBD4C0;
+}
+.footer-body{
+    padding: 50px 0;
+    text-align: center;
+    color: #918972;
+}
+/* E-尾部样式 */

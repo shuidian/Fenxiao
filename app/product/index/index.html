@@ -1,0 +1,294 @@
+<header class="full-line-wrap">
+    <div class="valid-line-wrap header-body">
+        <div class="user-info">
+            <div class="username">
+                <span class="welcome">Hi</span>
+                <span class="user-icon"></span>
+                <span class="name oe" title="1640125615@qq.com">1640125615@qq.com</span>
+                <span class="quitlogin"><a href="/logout">退出</a></span>
+            </div>
+            <div class="username">
+                <span class="welcome">Hi</span>
+                <a href="#" class="name oe" title="请登录">请登录</a>
+            </div>
+            <div class="messages">(<span>136</span>)</div>
+        </div>
+        <div class="operate">
+            <a class="supplier" href="#">我是供应商</a>
+            <a class="buyer" href="#">我是采购商</a>
+            <a class="home" href="#">个人中心</a>
+            <a class="favorite" href="#">收藏夹</a>
+        </div>
+    </div>
+</header>
+<div class="search-bar">
+    <div class="search-bar-content valid-line-wrap">
+        <div class="logo">
+            <img src="../../../assets/img/logo.png" alt="分销商城">
+        </div>
+        <div class="search">
+            <div class="search-type">
+                <ul>
+                    <li>货源</li>
+                    <li>供应商</li>
+                </ul>
+            </div>
+            <div class="search-input">
+                <input type="text" placeholder="输入产品名称" maxlength="50">
+            </div>
+            <button (click)="search()" class="search-btn">搜 索</button>
+        </div>
+        <div class="search-nav">
+            <a href="#">我的供货订单</a>
+            <a href="#">我的采购订单</a>
+        </div>
+    </div>
+</div>
+<div class="nav">
+    <div class="nav-body valid-line-wrap">
+        <div class="nav-title">货源市场</div>
+        <ul class="nav-content">
+            <li><a href="#">源头好货</a></li>
+            <li><a href="#">进口货源</a></li>
+            <li><a href="#">供应商入住</a></li>
+            <li><a href="#">活动专区</a></li>
+            <li><a href="#">帮助中心</a></li>
+        </ul>
+    </div>
+</div>
+<div class="first-screen valid-line-wrap">
+    <div class="menu" (mouseenter)="show()" (mouseleave)="hide()">
+        <ul>
+            <li><a href="#">通讯</a></li>
+            <li><a href="#">数码</a></li>
+            <li><a href="#">家电</a></li>
+            <li><a href="#">汽车电子</a></li>
+            <li><a href="#">健康</a></li>
+        </ul>
+        <div *ngIf="showLayer" class="menu-item-detail">
+            <dl class="detail-item">
+                <dt>栏目一标题</dt>
+                <dd>
+                    <ul>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl class="detail-item">
+                <dt>栏目二标题</dt>
+                <dd>
+                    <ul>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl class="detail-item">
+                <dt>栏目三标题</dt>
+                <dd>
+                    <ul>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl class="detail-item">
+                <dt>栏目四标题</dt>
+                <dd>
+                    <ul>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                        <li><a href="#">详细品类</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide page1">轮播一</div>
+                <div class="swiper-slide page2">轮播二</div>
+                <div class="swiper-slide page3">轮播三</div>
+                <div class="swiper-slide page4">轮播四</div>
+            </div>
+            <!-- A四d Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="personal">
+        <h2>你好</h2>
+        <p>欢迎来到分销商城</p>
+        <div class="activity">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+        </div>
+        <ul class="base-info">
+            <li>认证</li>
+            <li>信用</li>
+            <li>账期</li>
+            <li>等级</li>
+        </ul>
+    </div>
+</div>
+<div class="product-list valid-line-wrap">
+    <ul>
+        <li class="product">
+            <div class="left-content">
+                <h2>3C</h2>
+                <a href="#">
+                    <img src="../../../assets/img/product.jpg" alt="产品图">
+                </a>
+            </div>
+            <div class="right-content">
+                <ul>
+                    <li><a href="#">芯片一</a></li>
+                    <li><a href="#">芯片二</a></li>
+                    <li><a href="#">芯片三</a></li>
+                    <li><a href="#">芯片四</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="product">
+            <div class="left-content">
+                <h2>3C</h2>
+                <a href="#">
+                    <img src="../../../assets/img/product.jpg" alt="产品图">
+                </a>
+            </div>
+            <div class="right-content">
+                <ul>
+                    <li><a href="#">芯片一</a></li>
+                    <li><a href="#">芯片二</a></li>
+                    <li><a href="#">芯片三</a></li>
+                    <li><a href="#">芯片四</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="product">
+            <div class="left-content">
+                <h2>3C</h2>
+                <a href="#">
+                    <img src="../../../assets/img/product.jpg" alt="产品图">
+                </a>
+            </div>
+            <div class="right-content">
+                <ul>
+                    <li><a href="#">芯片一</a></li>
+                    <li><a href="#">芯片二</a></li>
+                    <li><a href="#">芯片三</a></li>
+                    <li><a href="#">芯片四</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="product">
+            <div class="left-content">
+                <h2>3C</h2>
+                <a href="#">
+                    <img src="../../../assets/img/product.jpg" alt="产品图">
+                </a>
+            </div>
+            <div class="right-content">
+                <ul>
+                    <li><a href="#">芯片一</a></li>
+                    <li><a href="#">芯片二</a></li>
+                    <li><a href="#">芯片三</a></li>
+                    <li><a href="#">芯片四</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="product">
+            <div class="left-content">
+                <h2>3C</h2>
+                <a href="#">
+                    <img src="../../../assets/img/product.jpg" alt="产品图">
+                </a>
+            </div>
+            <div class="right-content">
+                <ul>
+                    <li><a href="#">芯片一</a></li>
+                    <li><a href="#">芯片二</a></li>
+                    <li><a href="#">芯片三</a></li>
+                    <li><a href="#">芯片四</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="product">
+            <div class="left-content">
+                <h2>3C</h2>
+                <a href="#">
+                    <img src="../../../assets/img/product.jpg" alt="产品图">
+                </a>
+            </div>
+            <div class="right-content">
+                <ul>
+                    <li><a href="#">芯片一</a></li>
+                    <li><a href="#">芯片二</a></li>
+                    <li><a href="#">芯片三</a></li>
+                    <li><a href="#">芯片四</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="product">
+            <div class="left-content">
+                <h2>3C</h2>
+                <a href="#">
+                    <img src="../../../assets/img/product.jpg" alt="产品图">
+                </a>
+            </div>
+            <div class="right-content">
+                <ul>
+                    <li><a href="#">芯片一</a></li>
+                    <li><a href="#">芯片二</a></li>
+                    <li><a href="#">芯片三</a></li>
+                    <li><a href="#">芯片四</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+<footer class="full-line-wrap">
+    <div class="valid-line-wrap footer-body">
+        <p>Copyright 2015沪ICP备15035021号 上海蜜瓜科技有限公司 All rights reserved</p>
+    </div>
+</footer>

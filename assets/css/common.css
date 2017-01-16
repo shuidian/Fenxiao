@@ -1,0 +1,32 @@
+/*定义一些可复用的样式*/
+/*body的背景色*/
+body{
+    background: #f3f3f3;
+}
+/*占满整行的容器*/
+.full-line-wrap{
+    width: 100%;
+}
+/*定义容器的有效区域宽度*/
+.valid-line-wrap{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+/*标题栏*/
+.title-bar{
+    height: 50px;
+    box-sizing: border-box;
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+    background: #f9f9f9;
+}
+/*所有带有disabled属性的元素都应该显示禁止的样式*/
+*[disabled]{
+    cursor: not-allowed;
+}
+/*放到component中会因为ng的属性问题不能加载*/
+.swiper-pagination-progress .swiper-pagination-progressbar{
+    background: #f99800;
+}

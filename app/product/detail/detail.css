@@ -1,0 +1,551 @@
+/* S-头部样式 */
+header{
+    height: 54px;
+    background: #df575b;
+    border-bottom: 1px solid #ccc;
+}
+header .header-body {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+header .user-info{
+    display: flex;
+}
+.username{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 7px;
+    color: #fff;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 0;
+}
+header .username span,
+header .username a{
+    display: inline-block;
+    height: 100%;
+    font-size: 12px;
+    vertical-align: middle;
+    color: #fff;
+}
+header .username span.welcome{
+    padding: 0 10px;
+}
+header .username span.name{
+    max-width: 240px;
+    margin-right: 10px;
+}
+header .username .user-icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../../../assets/img/hd-user-icon.png") no-repeat;
+}
+header .username .quitlogin{
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    background: #df575b;
+    border-radius: 2px;
+    text-align: center;
+    border: 1px solid #E3E6E1;
+}
+header .username .quitlogin a{
+    display: block;
+    width: 40px;
+    height: 20px;
+    color: #fff;
+}
+header .messages{
+    margin-top: 7px;
+    width: 44px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 35px;
+    color: #fff;
+    font-size: 16px;
+    background: url("../../../assets/img/hd-messages.png") no-repeat 12px 10px;
+    cursor: pointer;
+}
+header .messages span{
+    color: #efc686;
+}
+header .messages:hover{
+    background: url("../../../assets/img/hd-messages-pressed.png") no-repeat 12px 10px;
+}
+header .messages:hover span{
+    color: #E8AD4F;
+}
+header .operate{
+    display: flex;
+}
+.operate a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: 12px;
+    color: #fff;
+}
+/* E-头部样式 */
+/* S-搜索框样式 */
+.search-bar{
+    height: 100px;
+    border-bottom: 1px solid #f99800;
+}
+.search-bar-content{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.search-bar-content .logo{
+    display: flex;
+    align-items: center;
+    width: 280px;
+    height: 100%;
+}
+.search-bar-content .logo img{
+    width: 150px;
+}
+.search-bar-content .company{
+    margin-left: 15px;
+    color: #222;
+}
+.search-bar-content .company:hover{
+    color: #f99800;
+}
+.search-bar-content .company span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: #f99800;
+    border-radius: 10px;
+    color: #fff;
+}
+.search-bar-content .search{
+    display: flex;
+    width: 620px;
+    height: 40px;
+    border: 2px solid #f99800;
+}
+.search-bar-content .search .search-type{
+    width: 10%;
+    border-right: 1px solid #eee;
+}
+.search-bar-content .search .search-btn{
+    width: 20%;
+}
+.search-bar-content .search .search-type ul{
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+    transition: .3s;
+}
+.search-bar-content .search .search-type ul:after{
+    content: '';
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    display: block;
+    width: 8px;
+    height: 4px;
+    background: url("../../../assets/img/arrow-down.png") no-repeat;
+}
+.search-bar-content .search .search-type ul:hover{
+    height: 80px;
+    background: #fafafa;
+}
+.search-bar-content .search .search-type ul li{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    padding-left: 10%;
+    cursor: pointer;
+}
+.search-bar-content .search .search-input{
+    width: 50%;
+}
+.search-bar-content .search .search-input input{
+    width: 100%;
+    height: 100%;
+    padding-left: 5px;
+}
+.search-bar-content .search .search-btn{
+    background: #f3f3f3;
+    color: #f99800;
+    font-size: 16px;
+}
+.search-nav{
+    display: inline-block;
+}
+.search-nav a{
+    margin-left: 10px;
+    display: inline-block;
+    width: 98px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    padding: 5px 0;
+    background-color: #df575b;
+    color: #fff;
+    font-size: 13px;
+}
+.search-bar-content .search .search-btn.shop{
+    border-left: 2px solid #f99800;
+    transition: .3s;
+}
+.search-bar-content .search .search-btn.shop:hover{
+    background: #fff;
+}
+.search-bar-content .search .search-btn.all{
+    background: #f99800;
+    color: #fff;
+}
+/* E-搜索框样式 */
+/* S-店铺banner */
+.company-banner{
+    line-height: 0;
+}
+.company-banner img{
+    width: 100%;
+}
+/* E-店铺banner */
+/* S-店铺菜单区域 */
+.menu{
+    background: url("../../../assets/img/menu-bg.gif") repeat;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+.menu ul li a{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+/* E-店铺菜单区域 */
+/* S-商品详情区域 */
+.detail-wrap{
+    background: #fff;
+}
+.detail{
+
+}
+.detail .commodity-name{
+    height: 55px;
+    line-height: 55px;
+    color: #222;
+    font-size: 18px;
+}
+.detail-body{
+    display: flex;
+}
+.detail .preview{
+    width: 380px;
+}
+.detail .preview img{
+    width: 100%;
+}
+.detail .preview ul{
+    display: flex;
+}
+.detail .preview ul li{
+    margin-right: 10px;
+    line-height: 0;
+    cursor: pointer;
+}
+.detail .preview ul li.active{
+    border: 1px solid #f99800;
+}
+.detail .order-info{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 560px;
+}
+.detail .price-info{
+    border-top: 1px solid #f99800;
+    background: #fff5ec;
+}
+.detail .price-info table{
+    width: 100%;
+}
+.detail .price-info table td{
+    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+}
+.table-item-title{
+    font-size: 12px !important;
+    color: #aaa !important;
+}
+.detail .item-title{
+    display: inline-block;
+    width: 100px;
+    font-size: 12px;
+    color: #aaa;
+}
+.price td{
+    font-size: 30px;
+    color: #f99800;
+}
+.amount td{
+    color: #444;
+}
+.logistics,
+.deal-reply,
+.brand,
+.model,
+.buy-num{
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.deal-reply{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.deal-reply .item-title{
+    display: inline-block;
+}
+.deal,
+.reply{
+    display: inline-block;
+    color: #222;
+}
+.deal:hover,
+.reply:hover{
+    color: #f99800;
+}
+.deal span,
+.reply span{
+    color: #f99800;
+    font-weight: bold;
+}
+.buy-num{
+    display: flex;
+    align-items: center;
+}
+.buy-num .operate-area{
+    font-size: 0;
+}
+.buy-num input{
+    position: relative;
+    margin-left: -1px;
+    width: 62px;
+    height: 26px;
+    line-height: 26px;
+    padding: 2px 0 2px 8px;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    vertical-align: middle;
+    z-index: 1;
+}
+.buy-num button{
+    position: relative;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #e5e5e5;
+    font-size: 20px;
+    color: #666;
+    background: #fff;
+    box-sizing: border-box;
+    vertical-align: middle;
+    z-index: 1;
+}
+.buy-num input:hover{
+    border-color: #f99800;
+    z-index: 2;
+}
+.buy-num button:hover{
+    color: #f99800;
+    border-color: #f99800;
+    z-index: 2;
+}
+.buy-num .add{
+    margin-left: -1px;
+}
+.buy-num .can-buy{
+    margin-left: 15px;
+}
+.order-operate{
+    margin-top: 20px;
+    padding-left: 120px;
+}
+.order-operate button{
+    width: 160px;
+    height: 38px;
+    font-size: 16px;
+}
+.buy-now{
+    border: 1px solid #f99800;
+    background: #f99800;
+    color: #fff;
+}
+.add-to-list{
+    background: #ffecda;
+    border: 1px solid #f9d59e;
+    color: #f99800;
+}
+.company-info{
+    width: 220px;
+    background: #fff9e6;
+}
+.company-logo{
+    padding-top: 10px;
+    background: linear-gradient(#ffeeab, #fff9e6);
+    text-align: center;
+}
+.company-info .company-name{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.company-info .company-name a{
+    font-weight: bold;
+    color: #555;
+    font-size: 12px;
+}
+.company-info .company-name a:hover{
+    color: #f99800;
+}
+.company-aptitude{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #f99800;
+}
+.company-aptitude li{
+    margin-right: 5px;
+}
+.company-aptitude li a{
+    display: block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+    background: #f99800;
+    font-weight: bold;
+}
+.company-aptitude li.level a{
+    width: 36px;
+}
+.contact-company{
+    padding-left: 20px;
+    color: #555;
+}
+.contact-company li{
+    margin-top: 20px;
+}
+.company-operate{
+    margin-top: 20px;
+    display: flex;
+    padding-left: 20px;
+}
+.company-operate button{
+    margin-right: 5px;
+    width: 80px;
+    height: 30px;
+    border: 1px solid #ffd092;
+    box-sizing: border-box;
+    background: #fff;
+    color: #555;
+}
+.company-operate button:hover{
+    color: #f99800;
+    border-color: #f99800;
+}
+.detail-footer-nav{
+    display: flex;
+    padding-left: 5px;
+    height: 48px;
+    line-height: 48px;
+    border: 1px solid #e5e5e5;
+    border-top: 1px solid #f99800;
+}
+.detail-footer-nav li{
+    margin-right: 10px;
+    font-size: 15px;
+    color: #222;
+}
+.detail-footer-nav li:hover{
+    color: #f99800;
+    cursor: pointer;
+}
+.detail-footer-nav li.active{
+    color: #f99800;
+}
+.detail-item{
+    text-align: center;
+    line-height: 0;
+}
+.detail-item table{
+    margin-bottom: 22px;
+    width: 100%;
+}
+.detail-item table td{
+    word-wrap: break-word;
+    word-break: break-all;
+    text-align: left;
+    font-size: 12px;
+    line-height: normal;
+    vertical-align: text-top;
+}
+.detail-item table td.de-feature {
+    width: 8%;
+    padding: 14px 14px 0;
+    color: #999;
+}
+.detail-item table td.de-value {
+    width: 25%;
+    padding: 10px 10px 0 0;
+}
+.after-sale-item h2{
+    position: relative;
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #2c5da2;
+    font-weight: 700;
+}
+.after-sale-item h2:before{
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 18px;
+    display: block;
+    width: 2px;
+    height: 14px;
+    background: #2c5da2;
+}
+.after-sale-item p{
+    padding-left: 15px;
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+}
+.after-sale-item em{
+    padding-left: 15px;
+}
+/* E-商品详情区域 */
+/* S-尾部样式 */
+footer{
+    background: #DBD4C0;
+}
+.footer-body{
+    padding: 50px 0;
+    text-align: center;
+    color: #918972;
+}
+/* E-尾部样式 */

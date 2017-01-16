@@ -1,0 +1,61 @@
+<header class="full-line-wrap">
+    <div class="valid-line-wrap header-body">
+        <div class="logo">
+            <img src="../../images/logo.png" alt="电子合同">
+            <p class="cn-title">电子合同</p>
+            <p class="en-title">e-contract</p>
+        </div>
+        <div class="personal-info">
+            <a [routerLink]="['/user/login']" class="login vm">登录</a>
+        </div>
+    </div>
+</header>
+<div class="full-line-wrap register-full-line-wrap">
+        <div class="valid-line-wrap register-wrap">
+            <div class="right-form">
+                <h2>注册</h2>
+                <dl>
+                    <dt [ngClass]="{ hidden : !phone.dirty||phone.valid }">请输入您的手机号码</dt>
+                    <dd>
+                        <input [(ngModel)]="mobile_number"
+                               #phone="ngModel"
+                               (blur)="checkUserExist()"
+                               type="tel"
+                               placeholder="请输入您的手机号码"
+                               required
+                        >
+                    </dd>
+                    <dt [ngClass]="{ hidden : !verify.dirty||verify.valid }">请输入您的验证码</dt>
+                    <dd class="verify">
+                        <input [(ngModel)]="mobile_code"
+                               #verify="ngModel"
+                               type="text"
+                               placeholder="请输入短信验证码"
+                               required
+                        >
+                        <button class="send-verify" (click)="sendVerify()">发送验证</button>
+                    </dd>
+                    <dt [ngClass]="{ hidden : !pwd.dirty||pwd.valid }">请设置6位密码</dt>
+                    <dd class="password">
+                        <input [(ngModel)]="password"
+                               #pwd="ngModel"
+                               [type]="passwordType"
+                               placeholder="请设置密码（6个以上数字及字母组合）"
+                               minlength="6"
+                               required
+                        >
+                        <button (click)="togglePassword()" class="show-password">{{pwdBtnText}}</button>
+                    </dd>
+                </dl>
+                <div class="read-agreement">
+                    <label>
+                        <input class="vm"
+                               [(ngModel)]="agree"
+                               type="checkbox">
+                        <span class="vm">我已阅读并同意<a href="#">电子合同服务条例</a></span>
+                    </label>
+                </div>
+                <button class="register-btn" [disabled]="userExist" (click)="submit()">注&nbsp;&nbsp;&nbsp;&nbsp;册</button>
+            </div>
+        </div>
+    </div>

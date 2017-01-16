@@ -1,0 +1,130 @@
+/* S-头部样式 */
+header{
+    height: 72px;
+    background: #df575b;
+    border-bottom: 2px solid #ccc;
+}
+header .header-body {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+header .logo{
+    display: flex;
+    width: 100px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+header .personal-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register{
+    display: inline-block;
+    margin-right: 50px;
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 2px;
+    background: #fff;
+    color: #333;
+    border: 1px solid #e1e4e6;
+    box-sizing: border-box;
+}
+.register:hover{
+    color: #fff;
+    background: #DF585C;
+    border-color: #fff;
+}
+/* E-头部样式 */
+.login-full-line-wrap{
+    height: 508px;
+    background: #fff;
+}
+.login-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 508px;
+}
+.left-img{
+    width: 50%;
+}
+.right-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-left: 1px solid #e1e1e1;
+}
+.right-form form{
+    display: block;
+    width: 435px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.right-form h2{
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    font-size: 22px;
+    color: #df575b;
+    border-bottom: 1px solid #ddd;
+}
+.right-form dl dt{
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    color: #333;
+}
+.right-form dl dd{
+    overflow: hidden;
+}
+.right-form dl dd input{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    border: 1px solid #d2d2d2;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #333;
+}
+.right-form .remember-account{
+    margin-top: 15px;
+    font-size: 13px;
+}
+.right-form .remember-account input[type=checkbox]{
+    width: 15px;
+    height: 15px;
+}
+.right-form .remember-account span{
+    color: #666;
+}
+.right-form .remember-account a{
+    float: right;
+    color: #666;
+}
+.right-form .register-btn{
+    margin-top: 23px;
+    width: 374px;
+    height: 44px;
+    line-height: 44px;
+    background: #df575b;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 18px;
+}
+footer{
+    background: #DBD4C0;
+}
+.footer-body{
+    padding: 50px 0;
+    text-align: center;
+    color: #918972;
+}

@@ -1,0 +1,70 @@
+@CHARSET "UTF-8";
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, input, select, textarea, button {
+    border: 0 none;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+strong{font-weight: bold}
+ol, ul, li {list-style-type: none}
+fieldset,img{border: medium none}
+caption,th{text-align: left}
+table{border-collapse: collapse;border-spacing: 0;}
+body{font: 12px/20px Arial,Verdana,"微软雅黑","宋体","Lucida Grande","Lucida Sans Unicode",Helvetica,sans-serif;}
+input,select,textarea{font: 12px/20px "微软雅黑",Tahoma,Helvvetica,Arial,sans-serif;}
+i,cite,em{font-style: normal}
+input,button,select,textarea{outline: none}
+button{cursor: pointer;}
+html{min-height: 101%}
+
+/*链接*/
+a {color: #40628d;outline: medium none;text-decoration: none;}
+a:link,a:visited,a:active{text-decoration: none}
+a.hover{color: #D93600;text-decoration: underline}
+
+/*为旧版本浏览器格式后HTML5元素*/
+section, article, aside, header, footer, nav, dialog, figure ,menu{display: block;}
+output{display: inline;}
+/*分割块*/
+.clearfix::after {clear: both;content: ".";display: block;font-size: 0;height: 0;line-height: 0;overflow: hidden; }
+
+/***
+  **常用css重复使用属性
+***/
+
+/*文字排版*/
+.f12{font-size: 12px;}
+.f14{font-size: 14px;}
+.f16{font-size: 16px;}
+.fb{font-weight: bold;}
+.fn{font-weight: normal;}
+.unl{text-decoration: underline;}
+.no_unl{text-decoration: none;}
+.noborder{border: none 0;}
+
+/*定位*/
+.tl{text-align: left !important;}
+.tc{text-align: center !important;}
+.tr{text-align: right !important;}
+.bc{margin-right: auto;margin-right: auto;}
+.fl{float: left !important;display: inline;}
+.fr{float: right !important;display: inline;}
+.cb{clear: both;}
+.cl{clear: left;}
+.cr{clear: right;}
+.vm{vertical-align: middle;}
+.vt{vertical-align: top;}
+.vb{vertical-align: bottom;}
+.pr{position: relative;}
+.pa{position: absolute;}
+.zoom{zoom: 1}
+.none{display: none;}
+.clear:after{float: none;content: '';display: block;clear: both;height: 0;font-size: 0;line-height: 0;}
+/*超出部分隐藏的通用样式*/
+.oe{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
